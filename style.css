@@ -1,0 +1,83 @@
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    border: 1px solid #000000;
+    border-collapse: collapse;
+  }
+
+  .border_for_square{
+    width: 200px;
+    height: 200px;
+    border: 4px solid black;
+  }
+
+  .red_square{
+    z-index: -1;
+    width: 120px;
+    height: 120px;
+    background-color: red;
+  }
+
+  .green_square{
+    z-index: 1000;
+    position: relative;
+    margin-left: 40px;
+    margin-top: -80px;
+    width: 120px;
+    height: 120px;
+    background-color: lawngreen;
+  }
+
+  .blue_square{
+    z-index: -1;
+    margin-left: 80px;
+    margin-top: -80px;
+    width: 120px;
+    height: 120px;
+    background-color: blue;
+  }
+
+  header{
+    width: 90%;
+    height: 15%;
+    margin-left: 5%;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    background-color: pink;
+  }
+
+  footer{
+    margin-top:12%;
+    width: 90%;
+    height: 15%;
+    margin-left: 5%;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
+    background-color: pink;
+  }
+
+  .menu{
+      position: fixed;
+      display: inline;
+      top: 20%;
+      bottom:20%;
+      width: 10%;
+      opacity: 50%;
+      background-color: purple;
+  }
+
+  .central_block{
+    display: block;
+    margin-left: 300px;
+    margin-top: 100px;
+  }
+
+  a{
+    color:black;
+    display: block;
+  }
+
+
