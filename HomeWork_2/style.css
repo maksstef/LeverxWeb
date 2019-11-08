@@ -1,0 +1,36 @@
+.design_for_button{
+    display: block;
+    height: 50px;
+    width:200px;
+    color: white;
+    background-color: purple;
+    margin: 30px 0 0 30px;
+    border: 0;
+}
+
+.design_for_button2{
+    display: block;
+    width:200px;
+    color: white;
+    background-color: purple;
+    margin: 30px 0 0 30px;
+    border: 0;
+}
+
+#email{
+    display: block;
+    margin: 30px 0 0 30px;
+    font-size: 30px;
+}
+
+#login{
+    display: block;
+    margin: 30px 0 0 30px;
+    font-size: 30px;
+}
+
+#password{
+    display: block;
+    margin: 30px 0 0 30px;
+    font-size: 30px;
+}
