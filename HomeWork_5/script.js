@@ -41,6 +41,72 @@ class ComputingServer extends Computer{
     }
 }
 
+
+let div = document.getElementById('delete_div');
+
+let first_div = document.createElement('div');
+first_div.className = "card-header";
+first_div.id = "headingFour";
+
+let h5 = document.createElement('h5');
+h5.className = "mb-0";
+
+let but = document.createElement('button');
+but.className = "btn btn-link collapsed";
+but.type = "button";
+but.textContent = "Delete";
+but.setAttribute('aria-expanded','false');
+but.setAttribute('aria-controls', 'collapseFour');
+but.setAttribute('data-toggle','collapse');
+but.setAttribute('data-target','#collapseFour');
+
+h5.append(but);
+first_div.append(h5);
+div.prepend(first_div);
+
+document.body.append(div);
+
+let second_div = document.createElement('div');
+second_div.className = "collapse";
+second_div.id = "collapseFour";
+second_div.setAttribute('aria-labelledby','headingFour');
+second_div.setAttribute('data-parent','#accordionExample');
+
+let inner_div = document.createElement('div');
+inner_div.className="card-body";
+
+let inner_form = document.createElement('form');
+inner_form.id = "deleteForm";
+
+let div_in_form = document.createElement('div');
+div_in_form.className = "form-group";
+
+let label_in_form = document.createElement('label');
+label_in_form.setAttribute('for','did');
+label_in_form.textContent = "ID";
+
+let input_in_form = document.createElement('input');
+input_in_form.type = "text";
+input_in_form.className = "form-control";
+input_in_form.id = "did";
+input_in_form.placeholder = "Enter ID";
+
+let but2 = document.createElement('button');
+but2.type = "submit";
+but2.id = "dbutton";
+but2.className = "btn btn-danger";
+but2.textContent = "Delete";
+
+div_in_form.append(label_in_form);
+div_in_form.append(input_in_form);
+inner_form.append(div_in_form);
+inner_form.append(but2);
+inner_div.append(inner_form);
+second_div.append(inner_div);
+div.append(second_div);
+document.body.append(div);
+
+
 function onCreate(ev) {
     ev.preventDefault();
    
@@ -185,7 +251,6 @@ function parseCPUToTableRow(CPUs){
     return row;
 }
 
-
 (function () {
   
     document.getElementById('cbutton').addEventListener(
@@ -207,26 +272,3 @@ function parseCPUToTableRow(CPUs){
 })()
 
 
-let div = document.getElementById('delete_div');
-
-let first_div = document.createElement('div');
-first_div.className = "card-header";
-first_div.id = "headingFour";
-
-let h5 = document.createElement('h5');
-h5.className = "mb-0";
-
-let but = document.createElement('button');
-but.className = "btn btn-link collapsed";
-but.type = "button";
-but.textContent = "Delete";
-but.setAttribute('aria-expanded','false');
-but.setAttribute('aria-controls', 'collapseFour');
-but.setAttribute('data-toggle','collapse');
-but.setAttribute('data-target','#collapseFour');
-
-h5.append(but);
-first_div.append(h5);
-div.prepend(first_div);
-
-document.body.append(div);
